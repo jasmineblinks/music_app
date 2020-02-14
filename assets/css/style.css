@@ -1,3 +1,5 @@
+/* header */
+
 .heads{
     display:flex;
     justify-content: center;
@@ -12,3 +14,4 @@
     height: 25px;
     border-radius: 50px;
 }
+/* end of header */
