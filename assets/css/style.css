@@ -1,0 +1,14 @@
+.heads{
+    display:flex;
+    justify-content: center;
+    
+}
+.heads li{
+    margin: 10px;
+    list-style: none;
+}
+.search{
+    width: 20%;
+    height: 25px;
+    border-radius: 50px;
+}
