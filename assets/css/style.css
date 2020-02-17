@@ -1,6 +1,8 @@
 *{
+font-family:Acme;
 margin: 0%;
 padding: 0%
+
 }
 /* header */
 header{
@@ -27,8 +29,7 @@ header{
     height: 30px;
     border: 1px solid #912c62;
     border-radius: 50px;
-    background-color: #912c62
-    ;
+    background-color: #912c62 ;
     
 }
 /* end of header */
@@ -46,13 +47,14 @@ header{
     
 }
 .title{
-    font-size: 30px;
+    font-size: 50px;
     text-align: left;
     padding-top: 250px;
     padding-left: 80px;
     color:white;
 }
 .sub-title{
+    font-size: 20px;
     text-align: left;
     padding-left: 80px;
     padding-bottom: 25px;
@@ -62,7 +64,7 @@ header{
 background-color: #fff;
 color:#5e2167;
 border-radius: 50px;
-margin-left: 20px;
-padding: 7px;
+
+padding: 5px;
 width:100px;
 }
