@@ -41,6 +41,22 @@ header{
 }
 .title{
     font-size: 30px;
-    text-align: center;
+    text-align: left;
+    padding-top: 250px;
+    padding-left: 80px;
     color:white;
+}
+.sub-title{
+    text-align: left;
+    padding-left: 80px;
+    padding-bottom: 25px;
+    color:white;
+}
+.btn-white{
+background-color: #fff;
+color:#5e2167;
+border-radius: 50px;
+margin-left: 20px;
+padding: 7px;
+width:100px;
 }
