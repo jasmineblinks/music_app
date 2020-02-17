@@ -4,6 +4,7 @@ padding: 0%
 }
 /* header */
 header{
+    padding-top: 25px;
     color: #fff;
     position: fixed;
     width: 100%;
@@ -13,17 +14,21 @@ header{
 
 .heads{
     display:flex;
-    justify-content: center;
+    justify-content: space-evenly;
     
 }
+
 .heads li{
-    margin: 10px;
+    /* margin: 5px; */
     list-style: none;
 }
 .search{
     width: 25%;
     height: 30px;
+    border: 1px solid #912c62;
     border-radius: 50px;
+    background-color: #912c62;
+    
 }
 /* end of header */
 /* hero session */
