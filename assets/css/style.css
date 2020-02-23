@@ -137,16 +137,15 @@ width:50px;
 @media only screen and (min-width: 335px) and (max-width: 959px) {
   .title{
     font-size: 30px;
-    padding-top: 100px;
-    padding-left: 50px;
+    padding-top: 50px;
+    padding-left: 20px;
     text-align: center;
     color:white;  
   }  
   .sub-title{
     font-size: 15px;
     padding-bottom: 20px;
-    padding-left: 50px;
-
+    padding-left: 20px;
     text-align: center;
     color:white;
 }
