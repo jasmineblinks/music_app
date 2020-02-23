@@ -148,7 +148,43 @@ width:50px;
     padding-left: 20px;
     text-align: left;
     color:white;
-}
+}.btn-white1{
+    background-color: #fff;
+    color:#5e2167;
+    border-radius: 50px;
+    margin-left: 50px;
+    padding: 2px;
+    width:20px;
+    }
+    
+    .btn-white2{
+        background-color: #fff;
+        color:#5e2167;
+        border-radius: 50px;
+        margin: 3px;
+        padding: 2px;
+        width:30px;
+        }
+    
+        .btn-white3{
+            background-color: #fff;
+            color:#5e2167;
+            border-radius: 50px;
+            margin: 3px;
+            padding: 2px;
+            width:50px;
+            }
+    
+            .btn-white4{
+                background-color: #fff;
+                color:#5e2167;
+                border-radius: 50px;
+                margin: 3px;
+                padding: 2px;
+                width:50px;
+                }
+
+
 
 
 
