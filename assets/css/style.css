@@ -47,6 +47,10 @@ input[type="text"]::placeholder {
 } 
 /* end of header */
 /* hero session */
+
+.icon{
+    display: none;
+}
 .hero{
     
     width: 100%;
@@ -156,6 +160,18 @@ width:50px;
     padding: 2px;
     width:40px;
     }
+
+
+    .heads a.icon {
+        background: transparent;
+        display: block;
+        position: absolute;
+        right:5px;
+        top: 5px;
+        border: 1px solid #fff;
+        border-radius: 4px;
+      }
+      
     
     .btn-white2{
         background-color: #fff;
