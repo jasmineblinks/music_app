@@ -24,6 +24,43 @@ header{
     /* margin: 5px; */
     list-style: none;
 }
+
+.dropdown:hover .dropbtn {
+    background-color: #912c62;
+  }
+
+  .dropbtn{
+      background-color: transparent;
+      color: #fff;
+  }
+.dropdown-content {
+    display: none;
+    position: absolute;
+    color:#fff;
+    border-collapse: 1px solid #fff;
+    background-color: transparent;
+    min-width: 100px;
+    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+    z-index: 1;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  } */
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
 .search{
     width: 25%;
     height: 40px;
@@ -121,8 +158,66 @@ width:50px;
     padding-top:100px;
     
 }
+#play{
+    background-color: transparent;
+  border: 1px solid #fff;
+  border-radius:50px;
+  color:#fff;
+  padding: 12px 16px;
+  font-size: 16px;
+  margin-left: 20px;
+    margin-right: 15px;
+  cursor: pointer;
+}
+#stop{
+    background-color: transparent;
+  border: 1px solid #fff;
+  border-radius:50px;
+  color:#fff;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
 
-.footer i{
+#heart{
+    background-color: transparent;
+  border: 1px solid #fff;
+  border-radius:50px;
+  color:#fff;
+  margin: 5px;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#redo{
+    background-color: transparent;
+  border: 1px solid #fff;
+  border-radius:50px;
+  color:#fff;
+  margin: 5px;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+#download{
+    background-color: transparent;
+  border: 1px solid #fff;
+  border-radius:50px;
+  color:#fff;
+  /* margin-left: 20px; */
+    margin-right: 15px;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* .players{
+    margin:20px;
+} */
+/* .footer i{
     color:#fff;
     border:1px solid #fff;
     border-radius: 50px;
@@ -131,7 +226,7 @@ width:50px;
     margin-right: 15px;
     font-size: 20px;
 
-}
+} */
 
 
 
@@ -241,6 +336,7 @@ width:50px;
                     padding-top:70px;
                     
                 }
+                
                 
                 .footer i{
                     color:#fff;

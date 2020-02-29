@@ -20,13 +20,15 @@
            <input type="text" class="search" id="myInput"  placeholder="Search">
 
            <li>Upload</li>
-           <li>Features
+           <li class="dropdown">Features
+               <button class="dropbtn">
                 <i class="fa fa-caret-down"></i>
-               <!-- <ul>
+            </button>
+               <ul class="dropdown-content">
                    <li>Music</li>
                    <li>Videos</li>
                    <li>Amebo zone</li>
-               </ul> -->
+               </ul>
            </li>
            <li><i class="fas fa-bell"></i></li>
            <li><i class="fas fa-comment-alt"></i></li>
@@ -58,7 +60,7 @@
             </div>
        </div>    
           <a href="" class="icon" >
-        <i class="fa fa-bars"></i>
+        <i class="fas fa-bars"></i>
       </a> 
        
        <!-- end of header -->
@@ -75,16 +77,23 @@
         <button class="btn-white4">#easyvibes</button>
          <div class="footer">
              <div>
-                <i class="fas fa-play"></i>
+                <audio id="audio1">
+                    <source src="sample.mp3" />
+                    </audio>
+                    <button id="play"><i id="play-pause-button" class="fas fa-play"></i></button><button id="stop"><i  class="fas fa-pause"></i></button>
+                
              </div>
-             <div>
-                <i class="fas fa-heart"></i>
-                <i class="fas fa-redo"></i>
-                <i class="fas fa-download"></i>
+             <div class="players">
+                <button id="heart">  <i class="fas fa-heart"></i></button>
+                <button id="redo"><i class="fas fa-redo"></i></button>
+                <button id="download"><i class="fas fa-download"></i></button>
              </div>
          </div>
         
    </section> 
     <!-- end of session -->
+    
+
+    <script src="assets/js/app.js"></script>
 </body>
 </html>
