@@ -23,6 +23,9 @@ body {
         align-items: center;
         height: 100px;
 
+        >.container {
+            height: 100%;
+        }
 
     }
 
@@ -82,9 +85,10 @@ body {
         width: 100%;
 
         >.container {
-            height: 60%;
+            height: 100%;
             display: flex;
             justify-content: space-around;
+        margin-bottom: 100px;
 
         }
 
@@ -117,6 +121,7 @@ body {
 
 
         >.container {
+            height: 100%;
             display: flex;
             justify-content: space-around;
 

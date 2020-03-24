@@ -19,13 +19,17 @@ body {
   background-size: cover;
 }
 
-#app>header {
+#app > header {
   color: #fff;
   width: 100%;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 100px;
+}
+
+#app > header > .container {
+  height: 100%;
 }
 
 #app #heads {
@@ -33,8 +37,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 #app #heads li {
@@ -48,7 +52,7 @@ body {
   border-radius: 50px;
   background-color: #912c62;
   -webkit-box-shadow: 1px 1px #fff;
-  box-shadow: 1px 1px #fff;
+          box-shadow: 1px 1px #fff;
 }
 
 #app #heads input[type="text"]::-webkit-input-placeholder {
@@ -95,29 +99,30 @@ body {
   background-color: transparent;
   min-width: 100px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 16px 0px;
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 16px 0px;
+          box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 16px 0px;
 }
 
-#app>main {
+#app > main {
   height: calc(100%-200px);
   width: 100%;
 }
 
-#app>main>.container {
-  height: 60%;
+#app > main > .container {
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+      justify-content: space-around;
+  margin-bottom: 100px;
 }
 
-#app>main .title {
+#app > main .title {
   font-size: 50px;
   color: white;
 }
 
-#app>main .sub-title {
+#app > main .sub-title {
   font-size: 20px;
   color: white;
 }
@@ -132,20 +137,21 @@ body {
   font-weight: 700;
 }
 
-#app>footer {
+#app > footer {
   height: 100px;
   width: 100%;
 }
 
-#app>footer>.container {
+#app > footer > .container {
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+      justify-content: space-around;
 }
 
-#app>footer .btn-red {
+#app > footer .btn-red {
   background-color: transparent;
   border-radius: 50%;
   color: #fff;
@@ -163,5 +169,4 @@ body {
     width: 900px;
   }
 }
-
 /*# sourceMappingURL=style.css.map */
