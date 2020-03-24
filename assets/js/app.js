@@ -6,7 +6,7 @@
 //       q.style.display = "block";
 //     }
 //   }
- 
+
 //   let link = document.querySelector('.icon')
 //   link.addEventListener('click', function(event) {
 //     event.preventDefault(); burger()
