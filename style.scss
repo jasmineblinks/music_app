@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+#app {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#5e2167, rgba(204, 85, 0, 0.9));
+  display: flex;
+  flex-direction: column;
+
+  > header {
+    height: 100px;
+    width: 100%;
+
+    nav {
+      height: 100%;
+      color: #fff;
+      .nav-indicators {
+        width: 200px;
+        display: flex;
+        justify-content: flex-end;
+      }
+      .nav-links {
+        flex: 1;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+  >main{
+      height: calc(100% - 400px);
+    .music-info {
+        width: calc(100% - 300px);
+      }
+      
+  }
+}
+.flex {
+  display: flex;
+}
+.justify-center {
+  justify-content: start;
+}
+.items-center {
+  align-items: center;
+}
+.w-full {
+  width: 100%;
+}
+.h-full {
+  height: 100%;
+}
+.container {
+  margin: auto;
+
+  @media screen and (min-width: 1200px) {
+    width: 1100px;
+  }
+}
+.search {
+  border-radius: 50px;
+  height: 40px;
+  border: none;
+  box-shadow: -1px 7px 13px 0px #0000007a;
+  padding: 0 1rem;
+  background-color: transparent;
+  color: #fff;
+  min-width: 300px;
+  &::placeholder {
+    color: #fff;
+  }
+}
+.dropdown {
+  position: relative;
+  &-content {
+    position: absolute;
+    top: calc(100%);
+    box-shadow: 0px 5px 6px #00000036;
+    padding: 0.5rem 0;
+    min-width: 150px;
+    border-radius: 5px;
+    > * {
+      height: 30px;
+      width: 100%;
+      display: flex;
+      padding: 0 1rem;
+      align-items: center;
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.05);
+      }
+    }
+  }
+}
+
+.select-none {
+  user-select: none;
+}
+

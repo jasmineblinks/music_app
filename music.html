@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>music_app</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="app">
+        <header>
+            <nav class="container flex items-center">
+                <div class="nav-links">
+                    <a>Home</a>
+                    <a>Collection</a>
+                    <input type="text" class="search" id="myInput" placeholder="Search">
+                    <a>Upload</a>
+                    <details class="dropdown">
+                        <summary>
+                            <span class="select-none">
+                                Features
+                                <i class="fa fa-caret-down"> </i>
+                            </span>
+
+                        </summary>
+
+                        <div class="dropdown-content">
+                            <a>Music</a>
+                            <a>Videos</a>
+                            <a>Amebo zone</a>
+                        </div>
+                    </details>
+                </div>
+                <div class="nav-indicators">
+                    <a><i class="fas fa-bell"></i></a>
+                    <a><i class="fas fa-comment-alt"></i></a>
+                    <a><i class="fas fa-elapsis-h"></i></a>
+                </div>
+
+
+
+
+            </nav>
+        </header>
+        <main class="container flex">
+            <div class="music-info">
+                <h1 class="title">PARTE AFTER PARTE</h1>
+                <h3 class="sub-title">It's time to party</h3>
+                <button class="btn-white">#rnb</button>
+                <button class="btn-white">#Soul</button>
+                <button class="btn-white">#Let's party</button>
+                <button class="btn-white">#easyvibes</button>
+            </div>
+            <div class="music-cover-image"><img src="assets/img/px1.jpeg" alt="album cover" width="300px"
+                    height="200px"></div>
+
+        </main>
+        <footer>
+            <div class="container">
+                <div>
+                    <button class="app_control btn-red" data-type="play"><i id="play-pause-button"
+                            class="fas fa-play btn-red"></i></button>
+                    <!-- <button class="app_control btn-red" data-type="stop"><i id="play-pause-button"
+                            class="fas fa-pause btn-red"></i></button>
+                    <button class="app_control btn-red" data-type="pause"><i id="play-pause-button"
+                            class="fas fa-pause btn-red"></i></button> -->
+                </div>
+
+                <div class="players">
+                    <button id="heart" class="btn-red"> <i class="fas fa-heart"></i></button>
+                    <button id="redo" class="btn-red"><i class="fas fa-redo"></i></button>
+                    <button id="download" class="btn-red"><i class="fas fa-download"></i></button>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
