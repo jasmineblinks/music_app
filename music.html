@@ -37,13 +37,10 @@
                     </details>
                 </div>
                 <div class="nav-indicators">
-                    <a><i class="fas fa-bell"></i></a>
-                    <a><i class="fas fa-comment-alt"></i></a>
-                    <a><i class="fas fa-elapsis-h"></i></a>
+                    <button><i class="fas fa-bell"></i></button>
+                    <button><i class="fas fa-comment-alt"></i></button>
+                    <button><i class="fas fa-menu"></i></button>
                 </div>
-
-
-
 
             </nav>
         </header>
@@ -51,30 +48,34 @@
             <div class="music-info">
                 <h1 class="title">PARTE AFTER PARTE</h1>
                 <h3 class="sub-title">It's time to party</h3>
-                <button class="btn-white">#rnb</button>
-                <button class="btn-white">#Soul</button>
-                <button class="btn-white">#Let's party</button>
-                <button class="btn-white">#easyvibes</button>
+                <div class="tags">
+                    <button class="btn-white">#rnb</button>
+                    <button class="btn-white">#Soul</button>
+                    <button class="btn-white">#Let's party</button>
+                    <button class="btn-white">#easyvibes</button>
+                </div>
+
             </div>
-            <div class="music-cover-image"><img src="assets/img/px1.jpeg" alt="album cover" width="300px"
-                    height="200px"></div>
+            <div class="music-cover-image"><img src="assets/img/px1.jpeg" alt="album cover"></div>
 
         </main>
         <footer>
-            <div class="container">
-                <div>
-                    <button class="app_control btn-red" data-type="play"><i id="play-pause-button"
-                            class="fas fa-play btn-red"></i></button>
-                    <!-- <button class="app_control btn-red" data-type="stop"><i id="play-pause-button"
-                            class="fas fa-pause btn-red"></i></button>
-                    <button class="app_control btn-red" data-type="pause"><i id="play-pause-button"
-                            class="fas fa-pause btn-red"></i></button> -->
+            <div class="container control-bar">
+                <div class="flex items-center">
+                    <button class="control-btn play-btn" data-type="play">
+                        <i id="play-pause-button" class="fas fa-play btn-red"></i>
+                    </button>
+                    <div class="artist-info">
+                        <h3>Phyno</h3>
+                        <p>It's time to party</p>
+                    </div>
+
                 </div>
 
                 <div class="players">
-                    <button id="heart" class="btn-red"> <i class="fas fa-heart"></i></button>
-                    <button id="redo" class="btn-red"><i class="fas fa-redo"></i></button>
-                    <button id="download" class="btn-red"><i class="fas fa-download"></i></button>
+                    <button id="heart" class="control-btn"> <i class="fas fa-heart"></i></button>
+                    <button id="redo" class="control-btn"><i class="fas fa-redo"></i></button>
+                    <button id="download" class="control-btn"><i class="fas fa-download"></i></button>
                 </div>
             </div>
         </footer>

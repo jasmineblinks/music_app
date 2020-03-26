@@ -5,6 +5,7 @@
 
 body {
   margin: 0;
+  font-family: Arial, Helvetica;
 }
 
 #app {
@@ -20,6 +21,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  overflow-y: auto;
 }
 
 #app > header {
@@ -32,6 +34,12 @@ body {
   color: #fff;
 }
 
+#app > header nav > * {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 #app > header nav .nav-indicators {
   width: 200px;
   display: -webkit-box;
@@ -40,6 +48,16 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+#app > header nav .nav-indicators > button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+}
+
+#app > header nav .nav-indicators > button:not(:last-child) {
+  margin-right: 1rem;
 }
 
 #app > header nav .nav-links {
@@ -54,12 +72,123 @@ body {
           justify-content: space-between;
 }
 
+#app > header summary::-webkit-details-marker {
+  display: none;
+}
+
 #app > main {
-  height: calc(100% - 400px);
+  height: 300px;
+  padding-top: 2rem;
 }
 
 #app > main .music-info {
-  width: calc(100% - 300px);
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  color: #fff;
+}
+
+#app > main .music-info .title {
+  font-size: 3rem;
+  line-height: 1px;
+}
+
+#app > main .music-info .sub-title {
+  line-height: 1px;
+}
+
+#app > main .music-info .tags {
+  margin-top: 2rem;
+}
+
+#app > main .music-info .tags > button {
+  background-color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 2px 6px;
+}
+
+#app > main .music-info .tags > button:not(:last-child) {
+  margin-right: 10px;
+}
+
+#app > main .music-cover-image img {
+  width: 250px;
+  height: 100%;
+}
+
+#app > footer {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#app > footer .control-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#app > footer .control-bar .control-btn {
+  border: #fff solid 1px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  background-color: transparent;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+}
+
+#app > footer .control-bar .control-btn:not(:last-child) {
+  margin-right: 1rem;
+}
+
+#app > footer .control-bar .play-btn {
+  width: 60px;
+  height: 60px;
+  border: #fff solid 2px;
+}
+
+#app > footer .artist-info {
+  color: #fff;
+}
+
+#app > footer .artist-info * {
+  line-height: 0.5;
+}
+
+#app > footer .artist-info h3 {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#app > footer .artist-info p {
+  font-size: 12px;
 }
 
 .flex {
@@ -89,7 +218,7 @@ body {
 }
 
 .container {
-  margin: auto;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 1200px) {
