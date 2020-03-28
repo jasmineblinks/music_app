@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0%;
     padding: 0%;
@@ -8,143 +12,211 @@ body {
     position: fixed;
     width: 100%;
     height: 100%;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
+    display: flex;
+    flex-direction: column;
     overflow-y: auto;
-    background: linear-gradient(rgba(94, 33, 103, 1), rgba(204, 85, 0, 0.9)), url(../img/px8.jpeg);
+    background: linear-gradient(#5e2167, rgba(204, 85, 0, 0.9)), url(../img/px8.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
 
     >header {
-        color: #fff;
         width: 100%;
-        align-items: center;
         height: 100px;
 
-        >.container {
+
+        nav {
             height: 100%;
+            color: #fff;
+
+            >* {
+                align-items: center;
+            }
+
+            .nav-indicators {
+                width: 200px;
+                display: flex;
+                justify-content: flex-end;
+
+                >button {
+                    background-color: transparent;
+                    border: none;
+                    color: #fff;
+
+                    &:not(:last-child) {
+                        margin-right: 1rem;
+                    }
+                }
+            }
+
+            .nav-links {
+                flex: 1;
+                display: flex;
+                justify-content: space-between;
+            }
+
         }
 
+        summary::-webkit-details-marker {
+            display: none;
+        }
     }
 
-    #heads {
-        display: flex;
-        justify-content: space-evenly;
-
-    }
-
-    #heads li {
-        list-style: none;
-    }
-
-    #heads .search {
-        width: 40%;
-        height: 45px;
-        border: 1px solid #912c62;
-        border-radius: 50px;
-        background-color: #912c62;
-        box-shadow: 1px 1px #fff;
-    }
-
-    #heads input[type="text"]::placeholder {
-
-        /* Firefox, Chrome, Opera */
-        text-align: left;
-        padding-left: 15px;
-    }
-
-
-    .dropdown:hover .dropbtn {
-        background-color: #912c62;
-        cursor: pointer;
-    }
-
-    .dropdown:hover .dropdown-content {
-        display: block;
-    }
-
-    .dropdown-content a:hover {
-        background-color: #ddd;
-    }
-
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        color: rgb(255, 255, 255);
-        background-color: transparent;
-        min-width: 100px;
-        box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 16px 0px;
-
-    }
 
 
     >main {
-        height: calc(100%-200px);
-        width: 100%;
+        height: 300px;
+        padding-top: 2rem;
 
-        >.container {
-            height: 100%;
+        >.music-info {
+            width: 100%;
             display: flex;
-            justify-content: space-around;
-        margin-bottom: 100px;
+            justify-content: flex-end;
+            flex-direction: column;
+            color: #fff;
 
+            .title {
+                font-size: 3rem;
+                line-height: 1px;
+            }
+
+            .sub-title {
+                line-height: 1px;
+            }
+
+            .tags {
+                margin-top: 2rem;
+
+
+                >button {
+                    background-color: #fff;
+                    border-radius: 20px;
+                    border: none;
+                    padding: 2px 6px;
+
+                    &:not(:last-child) {
+                        margin-right: 10px;
+                    }
+                }
+            }
         }
 
-        .title {
-            font-size: 50px;
-            color: white;
-
+        .music-cover-image {
+            img {
+                width: 250px;
+                height: 100%;
+            }
         }
-
-        .sub-title {
-            font-size: 20px;
-            color: white;
-        }
-    }
-
-    .btn-white {
-        background-color: #fff;
-        color: #5e2167;
-        border-radius: 50px;
-        border: 1px solid #fff;
-        font-size: 16px;
-        margin: 3px;
-        font-weight: 700;
-
     }
 
     >footer {
-        height: 100px;
-        width: 100%;
+        flex: 1;
+        display: flex;
+        align-items: center;
 
-
-        >.container {
-            height: 100%;
+        >.control-bar {
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
 
+
+            .control-btn {
+                background-color: transparent;
+                border-radius: 50%;
+                color: #fff;
+                display: inline-flex;
+                justify-content: center;
+                width: 40px;
+                height: 40px;
+
+                &:not(:last-child) {
+                    margin-right: 1rem;
+                }
+            }
+
+            .play-btn {
+                width: 60px;
+                height: 60px;
+                border: #fff solid 2px;
+            }
         }
 
-        .btn-red {
-            background-color: transparent;
-            border-radius: 50%;
+        .artist-info {
             color: #fff;
-            font-size: 16px;
-            padding: 12px 16px;
-            cursor: pointer;
+
+            * {
+                line-height: 0.5;
+            }
+
+            h3 {
+                font-size: 14px;
+                font-weight: bold;
+            }
+
+            p {
+                font-size: 12px;
+            }
         }
 
     }
 
 
 }
+.flex {
+    display:flex;
+}
+.justify-center{
+    justify-content: start;
+}
+.item-center{
+    align-items: center;
+}
+.w-full{
+    width: 100%;
+}
+.h-full{
+    height:100%;
+}
 
 .container {
     margin: auto;
 
     @media screen and (min-width: 1200px) {
-        width: 900px;
+        width: 1100px;
     }
+}
+.search {
+    border-radius: 50px;
+    height:40px;
+    border:none;
+    box-shadow: -1px 7px 13px 0px #0000007a;
+    padding: 0 1rem;
+    background-color: transparent;
+    color: #fff;
+    min-width: 300px;
+    &::placeholder {
+        color:#fff;
+    }
+}
+.dropdown {
+    position: relative;
+    &-content {
+        position: absolute;
+        top:calc(100%);
+        box-shadow: 0px 5px 6px #00000036;
+        padding: 0.5rem 0;
+        min-width: 150px;
+        border-radius: 5px;
+        > * {
+            height: 30px;
+            width :100%;
+            display: flex;
+            padding: 0 1rem;
+            align-items: center;
+            &:hover {
+               background-color: rgba(0,0,0,0.05); 
+            }
+        }
+    }
+}
+.select-none{
+    user-select:none;
 }

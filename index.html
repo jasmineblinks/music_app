@@ -14,63 +14,80 @@
 <body>
     <div id="app">
         <header>
-            <div class="container">
-                <ul id="heads">
-                    <li>Home</li>
-                    <li>Collection</li>
+            <nav class="container flex items-center">
+                <div class="nav-links">
+                    <a>Home</a>
+                    <a>Collection</a>
                     <input type="text" class="search" id="myInput" placeholder="Search">
 
-                    <li>Upload</li>
-                    <li class="dropdown">Features
+                    <a>Upload</a>
+                    <details class="dropdown">
+                        <summary>
+                            <span class="select-none">
+                                Features
+                                <i class="fa fa-caret-down"></i>
 
-                        <i class="fa fa-caret-down">
+                            </span>
+                        </summary>
 
-                        </i>
+                        <div class="dropdown-content">
+                            <a>Music</a>
+                            <a>Videos</a>
+                            <a>Amebo zone</a>
+                        </div>
+                    </details>
+                </div>
+                    <div class="nav-indicators">
+                        <button><i class="fas fa-bell"></i></button>
+                        <button><i class="fas fa-comment-alt"></i></button>
+                        <button><i class="fas fa-ellipsis-h"></i></button>
+                    </div>
+                
 
-                        <ul class="dropdown-content">
-                            <li>Music</li>
-                            <li>Videos</li>
-                            <li>Amebo zone</li>
-                        </ul>
-                    </li>
-                    <li><i class="fas fa-bell"></i></li>
-                    <li><i class="fas fa-comment-alt"></i></li>
-                    <li><i class="fas fa-ellipsis-h"></i></li>
-                </ul>
-
-            </div>
+            </nav>
 
 
         </header>
-        <main>
-            <div class="container">
-                <div>
-                    <h1 class="title">PARTE AFTER PARTE</h1>
-                    <h3 class="sub-title">It's time to party</h3>
+        <main class="container flex">
+
+            <div class="music-info">
+                <h1 class="title">PARTE AFTER PARTE</h1>
+                <h3 class="sub-title">It's time to party</h3>
+                <div class="tags">
                     <button class="btn-white">#rnb</button>
                     <button class="btn-white">#Soul</button>
                     <button class="btn-white">#Let's party</button>
                     <button class="btn-white">#easyvibes</button>
                 </div>
-                <div><img src="assets/img/px1.jpeg" alt="album cover" width="300px" height="200px"></div>
             </div>
+            <div class="music-cover-image"><img src="assets/img/px1.jpeg" alt="album cover" width="300px"
+                    height="200px"></div>
+
 
         </main>
         <footer>
-            <div class="container">
-                <div>
-                    <button class="app_control btn-red" data-type="play"><i id="play-pause-button"
-                            class="fas fa-play btn-red"></i></button>
+            <div class="container control-bar">
+                <div class="flex items-center">
+                    <button class="control-btn play-btn" data-type="play">
+                        <i id="play-pause-button" class="fas fa-play btn-red"></i>
+                    </button>
                     <!-- <button class="app_control btn-red" data-type="stop"><i id="play-pause-button"
                             class="fas fa-pause btn-red"></i></button>
                     <button class="app_control btn-red" data-type="pause"><i id="play-pause-button"
                             class="fas fa-pause btn-red"></i></button> -->
+
+                    <div class="artist-info">
+                        <h3>Hillsong</h3>
+                        <p>What a beautiful name</p>
+                    </div>
                 </div>
 
-                <div class="players">
-                    <button id="heart" class="btn-red"> <i class="fas fa-heart"></i></button>
-                    <button id="redo" class="btn-red"><i class="fas fa-redo"></i></button>
-                    <button id="download" class="btn-red"><i class="fas fa-download"></i></button>
+
+                <div class="players flex items-center">
+                    <button id="heart" class="control-btn"> <i class="fas fa-heart"></i></button>
+                    <button id="redo" class="control-btn"><i class="fas fa-redo"></i></button>
+                    <button id="download" class="control-btn"><i class="fas fa-download"></i></button>
+
                 </div>
             </div>
         </footer>
