@@ -202,7 +202,7 @@ body {
           justify-content: start;
 }
 
-.item-center {
+.items-center {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
