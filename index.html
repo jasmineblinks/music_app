@@ -60,7 +60,7 @@
                     <button class="btn-white">#easyvibes</button>
                 </div>
             </div>
-            <div class="music-cover-image"><img src="assets/img/px7.jpeg" alt="album cover" ></div>
+            <div class="music-cover-image"><img src="assets/img/px7.jpeg" alt="album cover"></div>
 
 
         </main>
@@ -70,17 +70,19 @@
                     <button class="control-btn play-btn" data-type="play">
                         <i id="play-pause-button" class="fas fa-play btn-red"></i>
                     </button>
-                    <!-- <button class="app_control btn-red" data-type="stop"><i id="play-pause-button"
+                    <!-- <button class="control-btn play-btn" data-type="stop"><i id="play-pause-button"
                             class="fas fa-pause btn-red"></i></button>
-                    <button class="app_control btn-red" data-type="pause"><i id="play-pause-button"
+                    <button class="control-btn play-btn" data-type="pause"><i id="play-pause-button"
                             class="fas fa-pause btn-red"></i></button> -->
 
                     <div class="artist-info">
                         <h3>Hillsong</h3>
-                        <p>What a beautiful name</p>
+                        <p>Glimmer In the Dust</p>
                     </div>
                 </div>
-
+                <audio controls="false" id="music" hidden>
+                    <source src="assets/music/Glimmer In the Dust.mp3" />
+                </audio>
 
                 <div class="players flex items-center">
                     <button id="heart" class="control-btn"> <i class="fas fa-heart"></i></button>
@@ -91,6 +93,8 @@
             </div>
         </footer>
     </div>
+
+    <script src="assets/js/app.js"></script>
 </body>
 
 </html>
