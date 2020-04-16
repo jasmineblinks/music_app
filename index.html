@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/wavesurfer.js"></script>
 </head>
 
 <body>
@@ -65,10 +66,13 @@
 
         </main>
         <footer>
+                <div id="waveform"></div>
             <div class="container control-bar">
+                   
                 <div class="flex items-center">
                     <button class="control-btn play-btn" id="btn-play-pause" data-type="play">
-                        <i id="play-pause-button" class="fas fa-play btn-red"></i>
+                        <i id="play-pause-button" class="fas fa-play play-red"></i>
+                        <!-- <i id="play-pause-button" class="fas fa-pause pause-red" ></i> -->
                     </button>
                     <!-- <button class="control-btn play-btn" data-type="stop"><i id="play-pause-button"
                             class="fas fa-pause btn-red"></i></button> -->

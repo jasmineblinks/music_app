@@ -50,10 +50,20 @@ let audio = document.getElementById('music');
 button.addEventListener("click", function () {
     if (audio.paused) {
         audio.play();
-        // button.innerHTML = "Pause";
+        // button.classList.add("playing");
+        button.innerHTML="pause";
     }
     else {
         audio.pause();
-        // button.innerHTML = "Play";
+        // button.classList.remove('playing');
+        button.innerHTML="play";
     }
 });
+var wavesurfer = WaveSurfer.create({
+    container: '#waveform',
+    waveColor: '#912c62',
+    progressColor: '#eb7e68',
+    scrollParent: true
+    
+});
+wavesurfer.load('./music/Glimmer In the Dust.mp3');
