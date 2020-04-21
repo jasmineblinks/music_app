@@ -1,0 +1,238 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0%;
+  padding: 0%;
+  font-family: Acme;
+}
+
+#app {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  background: linear-gradient(#5e2167, rgba(204, 85, 0, 0.9)), url(./assets/img/px1.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  >header {
+      width: 100%;
+      height: 100px;
+
+
+      nav {
+          height: 100%;
+          color: #fff;
+
+          >* {
+              align-items: center;
+          }
+
+          .nav-indicators {
+              width: 200px;
+              display: flex;
+              justify-content: flex-end;
+
+              >button {
+                  background-color: transparent;
+                  border: none;
+                  color: #fff;
+
+                  &:not(:last-child) {
+                      margin-right: 1rem;
+                  }
+              }
+          }
+
+          .nav-links {
+              flex: 1;
+              display: flex;
+              justify-content: space-between;
+          }
+
+      }
+
+      summary::-webkit-details-marker {
+          display: none;
+      }
+  }
+
+
+
+  >main {
+      height: 300px;
+      padding-top: 2rem;
+
+      >.music-info {
+          width: 100%;
+          display: flex;
+          justify-content: flex-end;
+          flex-direction: column;
+          color: #fff;
+
+          .title {
+              font-size: 3rem;
+              line-height: 1px;
+          }
+
+          .sub-title {
+              line-height: 1px;
+          }
+
+          .tags {
+              margin-top: 2rem;
+
+
+              >button {
+                  background-color: #fff;
+                  border-radius: 20px;
+                  border: none;
+                  padding: 2px 6px;
+
+                  &:not(:last-child) {
+                      margin-right: 10px;
+                  }
+              }
+          }
+      }
+
+      .music-cover-image {
+          img {
+              width: 250px;
+              height: 100%;
+          }
+      }
+  }
+
+  >footer {
+      flex: 1;
+      display: flex;
+      align-items: center;
+
+      >.control-bar {
+          display: flex;
+          justify-content: space-between;
+
+
+          .control-btn {
+              background-color: transparent;
+              border-radius: 50%;
+              color: #fff;
+              display: inline-flex;
+              justify-content: center;
+              width: 40px;
+              height: 40px;
+
+              &:not(:last-child) {
+                  margin-right: 1rem;
+              }
+          }
+
+          .play-btn {
+              width: 60px;
+              height: 60px;
+              border: #fff solid 2px;
+          }
+      }
+
+      .artist-info {
+          color: #fff;
+
+          * {
+              line-height: 0.5;
+          }
+
+          h3 {
+              font-size: 14px;
+              font-weight: bold;
+          }
+
+          p {
+              font-size: 12px;
+          }
+      }
+
+  }
+
+
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: start;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.container {
+  margin: auto;
+
+  @media screen and (min-width: 1200px) {
+      width: 1100px;
+  }
+}
+
+
+
+
+
+.search {
+  border-radius: 50px;
+  height: 40px;
+  border: none;
+  box-shadow: -1px 7px 13px 0px #0000007a;
+  padding: 0 1rem;
+  background-color: transparent;
+  color: #fff;
+  min-width: 300px;
+
+  &::placeholder {
+      color: #fff;
+  }
+}
+
+.dropdown {
+  position: relative;
+
+  &-content {
+      position: absolute;
+      top: calc(100%);
+      box-shadow: 0px 5px 6px #00000036;
+      padding: 0.5rem 0;
+      min-width: 150px;
+      border-radius: 5px;
+
+      >* {
+          height: 30px;
+          width: 100%;
+          display: flex;
+          padding: 0 1rem;
+          align-items: center;
+
+          &:hover {
+              background-color: rgba(0, 0, 0, 0.05);
+          }
+      }
+  }
+}
+
+.select-none {
+  user-select: none;
+}
