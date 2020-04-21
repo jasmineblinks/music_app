@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import my_worship from "./assets/music/my_worship"
+// import my_worship from "./assets/music/my_worship"
 import glimmer from "./assets/music/Glimmer In the Dust.mp3";
 import goodGoodFather from "./assets/music/Good_Good_Father.mp3";
 import so_good from "./assets/music/so_good.mp3";
@@ -50,12 +50,12 @@ const Player = () => {
           </button>
 
           <div className="artist-info">
-            <h3>Phil Thompson</h3>
-            <p>My Worship</p>
+            <h3>Tehilla choir</h3>
+            <p>So good</p>
           </div>
         </div>
         <audio id="music">
-          <source src={my_worship} />
+          {/* <source src={my_worship} /> */}
           <source src={glimmer} />
           <source src={goodGoodFather} />
           <source src={so_good} />
