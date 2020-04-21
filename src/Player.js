@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import my_worship from "./assets/music/my_worship"
 import glimmer from "./assets/music/Glimmer In the Dust.mp3";
 import goodGoodFather from "./assets/music/Good_Good_Father.mp3";
+import so_good from "./assets/music/so_good.mp3";
+
 
 const Player = () => {
   const [buttonType, setButtonType] = useState("fa-play")
@@ -56,6 +58,8 @@ const Player = () => {
           <source src={my_worship} />
           <source src={glimmer} />
           <source src={goodGoodFather} />
+          <source src={so_good} />
+
         </audio>
 
         <div className="players flex items-center">
